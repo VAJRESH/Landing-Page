@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous" />
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/77ffb54878.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Landing Page</title>
+</head>
+
+<body>
+
+    <!-- navbar from bootstrap 5 -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/logo.png" alt="logo" class="nav-logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#how-it-works">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#benefits">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faqs">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimony">Testimonies</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Speak with experts:- +91-888-000-0088
+                </span>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="hero-section">
+            <!-- Photo by <a href="https://unsplash.com/@perloov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Per Lööv</a> on <a href="https://unsplash.com/collections/18899861/landing-page?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
+            <h1 class="hero-title">Connect your Business to the world</h1>
+            <ul class="hero-list">
+                <li>Design website</li>
+                <li>Develop solutions</li>
+                <li>Create amazing results</li>
+            </ul>
+            <section class="cta container-fluid">
+                <h2 class="cta-title">Get Started Here</h2>
+                <form class="cta-form">
+                    <div class="row g-2">
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="John" />
+                                <label for="floatingInput">First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="Doe" />
+                                <label for="floatingInput">Last Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-floating">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Message direct from here" id="floatingTextarea2"
+                            style="height: 100px"></textarea>
+                        <label for="floatingTextarea2">Message</label>
+                    </div>
+                    <button type="button" class="btn btn-dark">Send Message</button>
+                </form>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <section id="how-it-works">
+            <h2>How it Works</h2>
+            <article>
+                <div>
+                    <p>1</p>
+                    <p>
+                        Request for website, provide the design via email or other social
+                        media.
+                    </p>
+                </div>
+                <div>
+                    <p>2</p>
+                    <p>
+                        Receive your website, with your brand guidelines, within 48hrs on
+                        average.
+                    </p>
+                </div>
+                <div>
+                    <p>3</p>
+                    <p>
+                        We will revise the website until you are 100% satisfied.
+                        Satisfaction is guaranteed!
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section id="benefits">
+            <h2>Benefits</h2>
+            <article>
+                <div>
+                    <i class="fas fa-infinity"></i>
+                    <h4>Unlimited requests</h4>
+                    <p>Make as many requests as you wish</p>
+                </div>
+                <div>
+                    <i class="fas fa-shipping-fast"></i>
+                    <h4>Fast delivery</h4>
+                    <p>Get your website in just a few days</p>
+                </div>
+                <div>
+                    <i class="fas fa-cubes"></i>
+                    <h4>Top grade quality</h4>
+                    <p>Websites with clean code practices</p>
+                </div>
+                <div>
+                    <i class="fas fa-fingerprint"></i>
+                    <h4>Unique</h4>
+                    <p>Each website is unique and made just for you</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="faqs">
+            <h2>
+                <i class="fas fa-question-circle"></i>
+                Frequently Asked Questions
+            </h2>
+            <article>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                This section is open by default!
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It
+                                is shown by default, until the collapse plugin adds the
+                                appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing
+                                and hiding via CSS transitions. You can modify any of this
+                                with custom CSS or overriding our default variables. It's also
+                                worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit
+                                overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Click here to fulfil my purpose.
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It
+                                is hidden by default, until the collapse plugin adds the
+                                appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing
+                                and hiding via CSS transitions. You can modify any of this
+                                with custom CSS or overriding our default variables. It's also
+                                worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit
+                                overflow.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Just here so other sections don't feel lonely!!
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It
+                                is hidden by default, until the collapse plugin adds the
+                                appropriate classes that we use to style each element. These
+                                classes control the overall appearance, as well as the showing
+                                and hiding via CSS transitions. You can modify any of this
+                                with custom CSS or overriding our default variables. It's also
+                                worth noting that just about any HTML can go within the
+                                <code>.accordion-body</code>, though the transition does limit
+                                overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="testimony">
+            <h2>1000+ Satisfied Customers</h2>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="w-100 card-container">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/christopher-campbell-rDEOVtE7vOs-unsplash.jpg" class="card-img-top" alt="" loading='lazy' />
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/dan-ROJFuWCsfmA-unsplash.jpg" class="card-img-top" alt="" loading='lazy' />
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/ethan-hoover-0YHIlxeCuhg-unsplash.jpg" class="card-img-top" alt="" loading='lazy' />
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="w-100 card-container">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg" class="card-img-top" alt="" loading='lazy' />
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/kelly-sikkema-JN0SUcTOig0-unsplash.jpg" class="card-img-top" alt="" loading='lazy' />
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/mike-austin-jgSAuqMmJUE-unsplash.jpg" class="card-img-top" alt="" loading='lazy' />
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="w-100 card-container">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/mubariz-mehdizadeh-t3zrEm88ehc-unsplash.jpg" class="card-img-top" alt="" loading='lazy' />
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" class="card-img-top" alt="" loading='lazy' />
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/stefan-stefancik-w_Mj-SsE1mI-unsplash.jpg" class="card-img-top" alt="" loading='lazy' />
+                            <div class="card-body">
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>Copyright &#169; domainname.com.<wbr/> All Rights Reserved.</p>
+        <p>Developed by Vajresh</p>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>

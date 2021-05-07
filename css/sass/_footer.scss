@@ -1,0 +1,14 @@
+@use 'base';
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+
+    p{
+        margin: 0;
+    }
+}
