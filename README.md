@@ -7,6 +7,7 @@
 - This a landing page website created by me as internship assignment to get the internship at [jugaadhai](https://www.jugaadhai.in).
 - I found the design prototype on google search and it caught my eye. You can find the original design [here](https://www.buylandingpagedesign.com/blog/small-business-funding-bootstrap-landing-page/https://www.buylandingpagedesign.com/blog/small-business-funding-bootstrap-landing-page/).
 - Although, I did not completed replicated it!
+- This website is currently online you can visit it [here](https://vajresh.github.io/Landing-Page)
 
 ## Task and Progress
 - [x] Header
