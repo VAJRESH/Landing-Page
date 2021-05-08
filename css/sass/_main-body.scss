@@ -7,6 +7,9 @@ main{
     #how-it-works{
         margin: 5em 1em;
         padding: 1em;
+        @media screen and (max-width: 400px) {
+            padding: 0;
+        }
 
         h2{
             font-weight: 700;
@@ -19,6 +22,21 @@ main{
             background-color: base.$light-bg-shade;
             clip-path: polygon(0% 99%, 2% 88%, 0% 75%, 2% 60%, 0% 51%, 2% 40%, 1% 27%, 2% 15%, 1% 8%, 0% 0%, 100% 0%, 98% 11%, 99% 18%, 98% 27%, 99% 34%, 98% 43%, 98% 48%, 98% 55%, 98% 63%, 98% 68%, 100% 78%, 99% 83%, 98% 94%, 99% 100%);
             
+            @media screen and (max-width: 400px) {
+                flex-direction: column;
+                align-items: center;
+                width: auto;
+
+                div{
+                    display: flex;
+                    justify-content: space-around;
+
+                    p{
+                        flex: auto 0 0;
+                        width: 100%;
+                    }
+                }
+            }
             div{
                 width: 12em;
 
@@ -54,15 +72,24 @@ main{
         }
         
         article{
-            display: flex;
-            flex-wrap: wrap;
-            width: fit-content;
-            justify-content: space-evenly;
-            
-            div{
-                width: 40%;
-                margin: 1em auto;
+            display: grid;
+            grid-template-columns: auto auto;
+            width: 100%;
+            grid-gap: 10px;
+
+            @media screen and (max-width: 500px){
+                grid-template-columns: auto;
             }
+            
+            // div{
+            //     margin: 1em auto;
+
+            //     p{
+            //         width: 50%;
+            //         text-align: center;
+            //         margin: auto;
+            //     }
+            // }
 
             .fas{
                 font-size: 3rem;
@@ -101,11 +128,29 @@ main{
             justify-content: center;
             align-items: center;
 
+            @media screen and (max-width: 400px) {
+                flex-direction: column;
+                height: 55vh;
+
+                .card:not(:first-child){
+                    display: none;
+                }
+            }
+
+            @media screen and (max-width: 600px) {
+                height: 55vh;
+
+                .card:last-child{
+                    display: none;
+                }
+            }
+
             .card{
                 width: 20vw;
                 display: inline-block;
                 border-radius: 10px;
                 margin: auto 10px;
+                background-color: base.$light-bg-shade;
 
                 img{
                     max-height: 200px;

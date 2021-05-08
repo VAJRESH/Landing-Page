@@ -22,10 +22,13 @@ body {
   height: 70px;
 }
 @media screen and (max-width: 990px) {
+  .navbar {
+    padding: 0px;
+  }
   .navbar .container-fluid {
-    margin-top: -10px;
     min-height: 70px;
     background-color: #222222;
+    padding: 10px;
   }
 }
 .navbar .nav-logo {
@@ -63,7 +66,7 @@ header .hero-section {
   position: relative;
   top: 10em;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   header .hero-section {
     padding: 10px;
   }
@@ -72,7 +75,7 @@ header .hero-section .hero-title {
   width: 40vw;
   font-weight: 700;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   header .hero-section .hero-title {
     width: 100%;
   }
@@ -95,29 +98,69 @@ header .hero-section .cta {
   color: rgba(34, 34, 34, 0.555);
   z-index: 2;
 }
+@media screen and (max-width: 600px) {
+  header .hero-section .cta {
+    max-width: 55vw;
+    right: 3vw;
+    padding: 1em;
+    top: 60%;
+  }
+  header .hero-section .cta h2 {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (max-width: 400px) {
   header .hero-section .cta {
-    color: green;
     max-width: 50vw;
     right: 3vw;
     padding: 1em;
-    top: 50%;
+    top: 60%;
+  }
+  header .hero-section .cta h2 {
+    font-size: 1rem;
   }
 }
 header .hero-section .cta form {
   text-shadow: none;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   header .hero-section .cta form input, header .hero-section .cta form textarea {
-    height: 10px;
+    padding: 0;
+    height: 20px;
     display: inline;
+  }
+  header .hero-section .cta form label {
+    color: #222222;
+    margin: 0;
+    padding: 2px 5px;
+  }
+  header .hero-section .cta form button {
+    height: auto;
+    padding: 0 5px;
   }
   header .hero-section .cta form .form-control {
     margin: 2px;
   }
 }
+@media screen and (min-width: 400px) and (max-width: 600px) {
+  header .hero-section .cta form input, header .hero-section .cta form textarea {
+    height: 30px;
+    background-color: indianred;
+  }
+  header .hero-section .cta form label {
+    padding: 5px 10px;
+  }
+}
 header .hero-section .cta form .row > * {
   margin-top: 0;
+}
+header .hero-section .cta form textarea {
+  height: 80px;
+}
+@media screen and (max-width: 400px) {
+  header .hero-section .cta form textarea {
+    height: 30px;
+  }
 }
 header .hero-section .cta .cta-title {
   color: white;
@@ -137,6 +180,11 @@ main #how-it-works {
   margin: 5em 1em;
   padding: 1em;
 }
+@media screen and (max-width: 400px) {
+  main #how-it-works {
+    padding: 0;
+  }
+}
 main #how-it-works h2 {
   font-weight: 700;
 }
@@ -146,6 +194,21 @@ main #how-it-works article {
   gap: 10px;
   background-color: #eeeeee;
   clip-path: polygon(0% 99%, 2% 88%, 0% 75%, 2% 60%, 0% 51%, 2% 40%, 1% 27%, 2% 15%, 1% 8%, 0% 0%, 100% 0%, 98% 11%, 99% 18%, 98% 27%, 99% 34%, 98% 43%, 98% 48%, 98% 55%, 98% 63%, 98% 68%, 100% 78%, 99% 83%, 98% 94%, 99% 100%);
+}
+@media screen and (max-width: 400px) {
+  main #how-it-works article {
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+  }
+  main #how-it-works article div {
+    display: flex;
+    justify-content: space-around;
+  }
+  main #how-it-works article div p {
+    flex: auto 0 0;
+    width: 100%;
+  }
 }
 main #how-it-works article div {
   width: 12em;
@@ -182,14 +245,15 @@ main #benefits::before {
   z-index: -1;
 }
 main #benefits article {
-  display: flex;
-  flex-wrap: wrap;
-  width: fit-content;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
+  grid-gap: 10px;
 }
-main #benefits article div {
-  width: 40%;
-  margin: 1em auto;
+@media screen and (max-width: 500px) {
+  main #benefits article {
+    grid-template-columns: auto;
+  }
 }
 main #benefits article .fas {
   font-size: 3rem;
@@ -234,11 +298,29 @@ main #testimony .card-container {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 400px) {
+  main #testimony .card-container {
+    flex-direction: column;
+    height: 55vh;
+  }
+  main #testimony .card-container .card:not(:first-child) {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  main #testimony .card-container {
+    height: 55vh;
+  }
+  main #testimony .card-container .card:last-child {
+    display: none;
+  }
+}
 main #testimony .card-container .card {
   width: 20vw;
   display: inline-block;
   border-radius: 10px;
   margin: auto 10px;
+  background-color: #eeeeee;
 }
 main #testimony .card-container .card img {
   max-height: 200px;

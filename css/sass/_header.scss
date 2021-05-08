@@ -11,10 +11,12 @@
     height: 70px;
 
     @media screen and (max-width: 990px){
+        padding: 0px;
+
         .container-fluid{
-            margin-top: -10px;
             min-height: 70px;
             background-color: base.$dark;
+            padding: 10px;
         }
     }
     .nav-logo{
@@ -75,7 +77,7 @@ header{
         position: relative;
         top: 10em;
 
-        @media screen and (max-width: 400px){
+        @media screen and (max-width: 600px){
             padding: 10px;
         }
 
@@ -83,7 +85,7 @@ header{
             width: 40vw;
             font-weight: 700;
             
-            @media screen and (max-width: 400px){
+            @media screen and (max-width: 600px){
                 width: 100%;
             }
         }
@@ -108,31 +110,74 @@ header{
             color: base.$glass-dark;
             z-index: 2;
             
+            @media screen and (max-width: 600px){
+                max-width: 55vw;
+                right: 3vw;
+                padding: 1em;
+                top: 60%;
+
+                h2{
+                    font-size: 1.5rem;
+                }
+            }
+
             @media screen and (max-width: 400px){
-                color: green;
                 max-width: 50vw;
                 right: 3vw;
                 padding: 1em;
-                top: 50%;
+                top: 60%;
+
+                h2{
+                    font-size: 1rem;
+                }
             }
 
             form{
                 text-shadow: none;
 
-                @media screen and (max-width: 400px){
+                @media screen and (max-width: 600px){
                     input, textarea{
-                        // background-color: green;
-                        height: 10px;
+                        padding: 0;
+                        height: 20px;
                         display: inline;
+                    }
+
+                    label{
+                        color: base.$dark;
+                        margin: 0;
+                        padding: 2px 5px;
+                    }
+
+                    button{
+                        height: auto;
+                        padding: 0 5px;
                     }
 
                     .form-control{
                         margin: 2px;
                     }
                 }
+                
+                @media screen and (min-width: 400px) and (max-width: 600px){
+                    input, textarea{
+                        height: 30px;
+                        background-color: indianred;
+                    }
+                    label{
+                        padding: 5px 10px;
+                    }
+                }
 
                 .row > *{
                     margin-top: 0;
+                }
+
+                textarea{
+                    height: 80px;
+
+                    @media screen and (max-width: 400px){
+                        height: 30px;
+                    }
                 }
             }
             
