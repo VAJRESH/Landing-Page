@@ -9,7 +9,10 @@
 - Although, I did not completed replicated it!
 - This website is currently online you can visit it [here](https://vajresh.github.io/Landing-Page)
 
-## Task and Progress
+## Output
+![Output](../assets/Landing-Page.png?raw=true)
+<!-- ../assets/demo.gif?raw=true -->
+## Task
 - [x] Header
 - [x] Hero Section
 - [x] Sign In/Up Form (CTA)
